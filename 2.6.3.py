@@ -1,3 +1,21 @@
+{(a=input()
+b = []
+c = []
+l = 1  # len(a.split())
+print(l)
+while a != 'end':
+    b.append([int(i) for i in a.split()])
+    a = input()
+c = b
+for i in range(l):
+    for j in range(l):
+        c[i][j] = b[(i - 1) % l][j] + b[(i + 1) % l][j] + b[i][(j - 1) % l] + b[i][(j + 1) % l]
+        # c[i][j] = b[i][j]+1
+        # j += 1
+        print(c[i][j], end=' ')
+    print() )}
+
+
 string = m = []
 while string != 'end':
     string = input()
